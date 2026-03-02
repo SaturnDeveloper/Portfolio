@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tschabuschnig Fabian – Portfolio</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Deine App-Skripte (defer) -->
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="logo" href="#top">Tschabuschnig Fabian</a>
+
+    <nav class="nav">
+      <a href="#projects">Projekte</a>
+      <a href="#about">Über mich</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Theme wechseln" type="button">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- FULLSCREEN BABYLON HERO (erster Screen) -->
+    <section class="babylon-hero" aria-label="3D Hero Preview">
+      <div class="babylon-window fullscreen">
+        <canvas id="renderCanvas"></canvas>
+
+        <div class="babylon-overlay">
+          <span>Babylon.js Preview</span>
+
+          <div class="overlay-actions">
+            <button id="toggleAnim" class="mini-btn" type="button">⏯</button>
+            <a class="mini-btn" href="#projects">↓ Projekte</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">Scroll ↓</div>
+    </section>
+
+    <!-- Dein normaler Hero darunter -->
+    <section class="hero reveal">
+      <div class="hero__text">
+        <h1>Multimedia / Game Dev / 3D</h1>
+        <p>
+          Unity (C#), 3D Modeling, Story Games & Worldbuilding.
+          Hier sind ausgewählte Projekte und Case Studies.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="#projects">Projekte ansehen</a>
+          <a class="btn ghost" href="assets/CV.pdf" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="stat">
+          <span class="stat__big">7+</span>
+          <span class="stat__label">Jahre Unity</span>
+        </div>
+        <div class="stat">
+          <span class="stat__big">3D</span>
+          <span class="stat__label">Modeling & Pipeline</span>
+        </div>
+        <div class="stat">
+          <span class="stat__big">DnD</span>
+          <span class="stat__label">Regelwerk & Lore</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section__head reveal">
+        <h2>Projekte</h2>
+        <p>Filtere nach Kategorie und öffne Details im Modal.</p>
+      </div>
+
+      <div class="filters reveal" id="filters"></div>
+      <div class="grid reveal" id="projectsGrid"></div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2>Über mich</h2>
+      <p>
+        Kurzprofil: Multimedia Technology, Fokus auf Game Development, 3D, Storytelling.
+        (Hier später: Skills, Toolchain, Links.)
+      </p>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Kontakt</h2>
+      <p>Schreib mir: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>
+        Links:
+        <a href="#" target="_blank" rel="noreferrer">GitHub</a> ·
+        <a href="#" target="_blank" rel="noreferrer">Itch.io</a> ·
+        <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <dialog id="projectModal" class="modal">
+    <form method="dialog" class="modal__inner">
+      <button class="modal__close" aria-label="Schließen" type="submit">✕</button>
+      <div id="modalContent"></div>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Dein Name</span>
+  </footer>
+
+  <!-- Babylon.js CDN (am Ende vom body) -->
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+  <script src="js/babylon-scene.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Texturen – Downloads</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script defer src="js/textures-data.js"></script>
+  <script defer src="js/textures.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Fabian Tschabuschnig</a>
+
+    <nav class="nav">
+      <a href="index.html#projects">Projekte</a>
+      <a href="index.html#about">Über mich</a>
+      <a href="index.html#contact">Kontakt</a>
+      <a href="textures.html" aria-current="page">Texturen</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Theme wechseln" type="button">🌙</button>
+    </div>
+  </header>
+
+  <main>
+  <section class="page-banner">
+    
+    <div class="page-banner__content">
+      <h1>Textures Library</h1>
+      <p>Free textures for games, 3D, film & photography projects.</p>
+    </div>
+<img src="assets/img/Materials_Banner.png" alt="Textures Banner">
+  </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h1>Texturen Downloads</h1>
+        <p class="muted">
+          Kostenlose/Portfolio-Texturen zum Download. Bitte Lizenz-Hinweise bei jedem Pack beachten.
+        </p>
+      </div>
+
+      <div class="filters" style="align-items:center;">
+        <input id="search" class="chip" style="border-radius:14px; padding:10px 12px; min-width:min(520px, 100%);"
+               placeholder="Suche: z.B. rust, concrete, wood, tiling …" />
+        <div id="tagFilters" class="filters" style="margin:0;"></div>
+      </div>
+
+      <div id="texturesGrid" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>Lizenz</h2>
+      <p class="muted">
+        Du kannst hier pro Pack eine Lizenz angeben (z.B. CC0 / Attribution / nur non-commercial).
+        Ich habe bewusst Platz dafür vorgesehen.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Dein Name</span>
+  </footer>
+</body>
+</html>

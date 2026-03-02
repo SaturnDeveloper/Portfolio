@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Game Insights – Dark Phantom</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/gdd.css" />
+
+  <script defer src="js/gdd-data.js"></script>
+  <script defer src="js/gdd.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Fabian Tschabuschnig</a>
+
+    <nav class="nav">
+      <a href="index.html#projects">Projekte</a>
+      <a href="index.html#about">Über mich</a>
+      <a href="index.html#contact">Kontakt</a>
+      <a href="textures.html">Texturen</a>
+      <a href="game.html" aria-current="page">Game Insights</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Theme wechseln" type="button">🌙</button>
+    </div>
+  </header>
+
+  <main class="gdd">
+    <!-- HERO -->
+    <section class="gdd-hero">
+      <div class="gdd-hero__left">
+        <p class="gdd-kicker" id="gddKicker"></p>
+        <h1 id="gddTitle"></h1>
+        <p class="gdd-sub" id="gddSubtitle"></p>
+
+        <div class="gdd-meta" id="gddMeta"></div>
+
+        <div class="gdd-cta">
+          <a id="gddPrimary" class="btn" href="#" target="_blank" rel="noreferrer">Trailer</a>
+          <a id="gddSecondary" class="btn ghost" href="#" target="_blank" rel="noreferrer">Build / Repo</a>
+        </div>
+      </div>
+
+      <div class="gdd-hero__right">
+        <img id="gddHeroImg" alt="Hero" />
+      </div>
+    </section>
+
+    <section class="gdd-layout">
+      <!-- TOC -->
+      <aside class="gdd-toc">
+        <div class="gdd-toc__head">
+          <strong>Inhalt</strong>
+          <button id="tocToggle" class="mini-btn" type="button">☰</button>
+        </div>
+        <nav id="tocNav"></nav>
+      </aside>
+
+      <!-- CONTENT -->
+      <div class="gdd-content">
+        <div id="gddSections"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Fabian Tschabuschnig</span>
+  </footer>
+</body>
+</html>

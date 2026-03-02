@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galerie</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+
+  <script defer src="js/data.js"></script>
+  <script defer src="js/gallery.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Fabian Tschabuschnig</a>
+
+    <nav class="nav">
+      <a href="index.html#projects">Projekte</a>
+      <a href="gallery.html" aria-current="page">Galerie</a>
+      <a href="textures.html">Texturen</a>
+      <a href="index.html#about">Über mich</a>
+      <a href="index.html#contact">Kontakt</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Theme wechseln" type="button">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section__head">
+        <h1>Galerie</h1>
+        <p class="muted">Suche links, Tags rechts (Steam-like).</p>
+      </div>
+
+      <div class="gallery-layout">
+        <!-- LEFT: content -->
+        <div class="gallery-main">
+          <input id="search" class="gallery-search" placeholder="Suche: title, tags, tools, medium …" />
+          <div id="mediumFilters" class="filters" style="margin:0 0 12px;"></div>
+
+          <div id="galleryGrid" class="gallery-grid"></div>
+        </div>
+
+        <!-- RIGHT: tag sidebar -->
+        <aside class="gallery-side">
+          <div class="side-card">
+            <div class="side-head">
+              <strong>Tags</strong>
+              <button id="clearTags" class="mini-btn" type="button">Löschen</button>
+            </div>
+
+            <div id="selectedTags" class="tagbar__selected"></div>
+
+            <div class="tagbar__inputWrap">
+              <input id="tagInput" class="tagbar__input" placeholder="Tags hinzufügen …" autocomplete="off" />
+              <div id="tagSuggest" class="tagbar__suggest"></div>
+            </div>
+
+            <p class="muted side-hint">Tipp: Mehrere Tags = UND-Filter (Werk muss alle Tags haben).</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <dialog id="lightbox" class="modal">
+    <form method="dialog" class="modal__inner gallery-lightbox">
+      <button class="modal__close" aria-label="Schließen">✕</button>
+      <div id="lightboxContent"></div>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Fabian Tschabuschnig</span>
+  </footer>
+</body>
+</html>
