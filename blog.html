@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog – Tschabuschnig Fabian</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+
+  <script defer src="js/blog-data.js"></script>
+  <script defer src="js/blog.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html#top">Tschabuschnig Fabian</a>
+
+    <nav class="nav">
+      <a href="index.html#projects">Projekte</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#about">Über mich</a>
+      <a href="index.html#contact">Kontakt</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Theme wechseln" type="button">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner blog-banner reveal">
+      <div class="page-banner__content">
+        <span class="blog-eyebrow">Devlog / Worldbuilding / Game Design</span>
+        <h1>Blog</h1>
+        <p>
+          Gedanken zu Game Development, Unity, 3D, Storytelling,
+          DnD-Systemen und düsterem Worldbuilding.
+        </p>
+      </div>
+    </section>
+
+    <section class="section blog-layout reveal">
+      <aside class="blog-sidebar">
+        <label class="blog-search">
+          <span>Suche</span>
+          <input id="blogSearch" type="search" placeholder="Post suchen..." />
+        </label>
+
+        <div>
+          <h2>Kategorien</h2>
+          <div id="blogFilters" class="filters"></div>
+        </div>
+      </aside>
+
+      <div>
+        <div class="section__head blog-headline">
+          <h2>Alle Beiträge</h2>
+          <p id="blogCount">Beiträge werden geladen...</p>
+        </div>
+
+        <div id="blogGrid" class="blog-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Tschabuschnig Fabian</span>
+  </footer>
+</body>
+</html>
