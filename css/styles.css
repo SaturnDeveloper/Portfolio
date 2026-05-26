@@ -85,7 +85,7 @@ img{ max-width:100%; display:block; border-radius:16px; }
 /* ===== Babylon Fullscreen Hero ===== */
 .babylon-hero{
   height: 100vh;
-  padding: 18px;
+  padding: 0;
   display:grid;
   place-items:center;
   position:relative;

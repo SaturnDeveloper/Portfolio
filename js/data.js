@@ -3,13 +3,13 @@
 
 window.PROJECTS = [
   {
-    id: "dark-phantom",
-    title: "Dark Phantom (Prototype)",
+    id: "undercover-King",
+    title: "Undercover King",
     medium: "Games",
     tags: ["Unity", "Story", "Gameplay"],
-    year: "2025",
-    short: "Düsteres Fantasy-Action/Story Prototype.",
-    role: "Design + Programming + Writing",
+    year: "2026",
+    short: "cozy kingdom manager",
+    role: "Design + Programming + Writing + Art",
     stack: ["Unity", "C#"],
     links: [{ label: "Video", url: "https://example.com" }],
     insights: "game.html", 
@@ -106,6 +106,20 @@ window.PROJECTS = [
     stack: ["Lightroom"],
     links: [{ label: "Wiki", url: "https://advenura.fandom.com/wiki/Advenura_Wiki" }],
     details: ["Series narrative", "Color grade"]
+  }
+  ,
+ {
+    id: "easy_light",
+    title: "Easy Light Package",
+    medium: "Tool",
+    tags: ["Tool", "Unity"],
+    year: "ongoing",
+    short: "Easy Light Placement in Unity",
+    role: "Developer",
+    stack: ["Unity", "C#"],
+    insights: "game.html", 
+    media: { type: "image", src: "assets/img/placeholder.jpg" },
+    details: ["Tool Developement", "Lighting"]
   }
 ];
 
