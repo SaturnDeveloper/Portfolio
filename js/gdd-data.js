@@ -2,15 +2,15 @@
 
 window.GDD = {
   kicker: "Game Design Document / Insights",
-  title: "Dark Phantom",
+  title: "Undercover King",
   subtitle: "Dark Fantasy Action / Story Prototype – Design, Systems & Production Notes.",
 
   heroImage: "assets/img/placeholder.jpg",
 
   meta: [
-    "Genre: Dark Fantasy / Action",
+    "Genre: Cozy Game , Management Simulation",
     "Engine: Unity (C#)",
-    "Role: Design + Programming + Writing",
+    "Role: Design + Programming + Writing + Art",
     "Status: Prototype"
   ],
 
