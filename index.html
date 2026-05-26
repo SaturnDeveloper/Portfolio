@@ -31,21 +31,24 @@
 
     <!-- FULLSCREEN BABYLON HERO (erster Screen) -->
     <section class="babylon-hero" aria-label="3D Hero Preview">
-      <div class="babylon-window fullscreen">
-        <canvas id="renderCanvas"></canvas>
+  <div class="babylon-window fullscreen">
 
-        <div class="babylon-overlay">
-          <span>Babylon.js Preview</span>
+    <!-- VIDEO VOR DEM SPIEL -->
+    <video id="introVideo" class="intro-video" autoplay muted loop playsinline>
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
 
-          <div class="overlay-actions">
-            <button id="toggleAnim" class="mini-btn" type="button">⏯</button>
-            <a class="mini-btn" href="#projects">↓ Projekte</a>
-          </div>
-        </div>
-      </div>
+    <!-- BABYLON CANVAS (anfangs versteckt) -->
+    <canvas id="renderCanvas" class="hidden"></canvas>
 
-      <div class="scroll-hint">Scroll ↓</div>
-    </section>
+    <!-- START BUTTON -->
+    <div id="startOverlay" class="start-overlay">
+      <button id="startGameBtn" class="start-btn">▶ Start</button>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Dein normaler Hero darunter -->
     <section class="hero reveal">

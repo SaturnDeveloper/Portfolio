@@ -101,17 +101,20 @@ img{ max-width:100%; display:block; border-radius:16px; }
 }
 
 .babylon-window.fullscreen{
-  width: min(1200px, 94vw);
-  height: min(720px, 86vh);
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;        /* optional: wenn du wirklich randlos willst */
+  border: none;            /* optional */
 }
 
-#renderCanvas{
-  width:100%;
-  height:100%;
-  display:block;
-  outline:none;
-  touch-action:none;
+
+#renderCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: auto;
 }
+
 
 .babylon-overlay{
   position:absolute;
@@ -497,4 +500,36 @@ html.js .reveal.in{ opacity:1; transform:none; }
 
 .carousel__dot.is-active {
   opacity: 1;
+}
+
+.intro-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+
+.start-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 5, 10, 0.55);
+}
+
+.start-btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
 }

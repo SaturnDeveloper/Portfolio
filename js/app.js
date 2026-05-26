@@ -357,3 +357,22 @@
   renderFilters();
   renderGrid();
 })();
+
+window.addEventListener("DOMContentLoaded", () => {
+  const startBtn = document.getElementById("startGameBtn");
+  const video = document.getElementById("introVideo");
+  const canvas = document.getElementById("renderCanvas");
+  const overlay = document.getElementById("startOverlay");
+
+ startBtn.addEventListener("click", () => {
+  video.pause();
+  video.classList.add("hidden");
+
+  overlay.classList.add("hidden");   // <--- WICHTIG
+
+  canvas.classList.remove("hidden");
+
+  window.startBabylonScene();
+});
+
+});
