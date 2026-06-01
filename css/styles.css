@@ -533,3 +533,22 @@ html.js .reveal.in{ opacity:1; transform:none; }
   border-radius: 8px;
   cursor: pointer;
 }
+
+#nextSceneBtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 9999;
+  padding: 12px 22px;
+  font-size: 18px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;            /* unsichtbar */
+  pointer-events: none;  /* nicht klickbar */
+  transition: opacity 0.4s ease;
+}
+

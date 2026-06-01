@@ -31,24 +31,27 @@
 
     <!-- FULLSCREEN BABYLON HERO (erster Screen) -->
     <section class="babylon-hero" aria-label="3D Hero Preview">
-  <div class="babylon-window fullscreen">
+      <div class="babylon-window fullscreen">
 
-    <!-- VIDEO VOR DEM SPIEL -->
-    <video id="introVideo" class="intro-video" autoplay muted loop playsinline>
-      <source src="assets/intro.mp4" type="video/mp4" />
-    </video>
+        <!-- VIDEO VOR DEM SPIEL -->
+        <video id="introVideo" class="intro-video" autoplay muted loop playsinline>
+          <source src="assets/intro.mp4" type="video/mp4" />
+        </video>
 
-    <!-- BABYLON CANVAS (anfangs versteckt) -->
-    <canvas id="renderCanvas" class="hidden"></canvas>
+        <!-- BABYLON CANVAS (anfangs versteckt) -->
+        <canvas id="renderCanvas" class="hidden"></canvas>
 
-    <!-- START BUTTON -->
-    <div id="startOverlay" class="start-overlay">
-      <button id="startGameBtn" class="start-btn">▶ Start</button>
-    </div>
+        <!-- START BUTTON -->
+        <div id="startOverlay" class="start-overlay">
+          <button id="startGameBtn" class="start-btn">▶ Start</button>
+        </div>
 
-  </div>
-</section>
+        <!-- SZENE-WECHSEL BUTTON -->
+        <button id="nextSceneBtn" class="start-btn">Szene wechseln</button>
 
+
+      </div>
+    </section>
 
     <!-- Dein normaler Hero darunter -->
     <section class="hero reveal">
@@ -125,6 +128,14 @@
   <!-- Babylon.js CDN (am Ende vom body) -->
   <script src="https://cdn.babylonjs.com/babylon.js"></script>
   <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
-  <script src="js/babylon-scene.js"></script>
+
+  <!-- Deine Szenen -->
+  <script src="js/createSceneA.js"></script>
+  <script src="js/createSceneB.js"></script>
+  <script src="js/createSceneC.js"></script>
+
+  <!-- Szenen-Manager -->
+  <script src="js/sceneManager.js"></script>
+
 </body>
 </html>
